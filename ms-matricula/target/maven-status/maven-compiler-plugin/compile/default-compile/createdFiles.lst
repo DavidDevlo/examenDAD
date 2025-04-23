@@ -1,0 +1,9 @@
+com\example\msmatricula\service\impl\MatriculaServiceImpl.class
+com\example\msmatricula\controller\MatriculaController.class
+com\example\msmatricula\config\OpenApiConfig.class
+com\example\msmatricula\repository\MatriculaRepository.class
+com\example\msmatricula\dto\EstudianteDto.class
+com\example\msmatricula\entity\Matricula.class
+com\example\msmatricula\feing\EstudianteFeing.class
+com\example\msmatricula\MsMatriculaApplication.class
+com\example\msmatricula\service\MatriculaService.class
