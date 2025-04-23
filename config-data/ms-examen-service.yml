@@ -5,16 +5,6 @@ spring:
   application:
     name: ms-examen-service
 
-  # Perfil común para Config Server
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://tu-repo-en-github.com/usuario/config-data
-          clone-on-start: true
-        native:
-          search-locations: classpath:/config
-
 ---
 # Configuración para ms-estudiante (usando MySQL)
 spring:
