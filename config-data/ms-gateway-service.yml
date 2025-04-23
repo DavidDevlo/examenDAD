@@ -24,4 +24,4 @@ spring:
         - id: ms-curso-service
           uri: lb://ms-curso-service
           predicates:
-            - Path=/curso/**
+            - Path=/cursos/**
