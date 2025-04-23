@@ -14,5 +14,5 @@ spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ms-estudiante
-    username: david
-    password: 61321351
+    username: root
+    password:
