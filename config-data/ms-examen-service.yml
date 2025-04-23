@@ -1,78 +1,23 @@
-# application.yml (config-data)
 server:
   port: 8081
 spring:
   application:
     name: ms-examen-service
 
----
-# Configuración para ms-estudiante (usando MySQL)
-spring:
-  config:
-    activate:
-      on-profile: ms-estudiante
-  application:
-    name: ms-estudiante
   datasource:
     url: jdbc:mysql://localhost:3306/ms-estudiante
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-  springdoc:
-    api-docs:
-      enabled: true
-    swagger-ui:
-      enabled: true
-      path: /doc/swagger-ui.html
 
----
-# Configuración para ms-curso (usando PostgreSQL)
-# spring:
-#   config:
-#     activate:
-#       on-profile: ms-curso
-#   application:
-#     name: ms-curso
-#   datasource:
-#     url: jdbc:postgresql://localhost:5432/ms-curso
-#     driver-class-name: org.postgresql.Driver
-#     username: postgres
-#     password: tu_password
-#   jpa:
-#     hibernate:
-#       ddl-auto: update
-#     show-sql: true
-#   springdoc:
-#     api-docs:
-#       enabled: true
-#     swagger-ui:
-#       enabled: true
-#       path: /doc/swagger-ui.html
-
----
-# Configuración para ms-curso (usando H2)
-spring:
-  config:
-    activate:
-      on-profile: ms-curso
-  application:
-    name: ms-curso
-  datasource:
-    url: jdbc:mysql://localhost:3306/ms-curso
-    username: root
-    password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  springdoc:
-    api-docs:
-      enabled: true
-    swagger-ui:
-      enabled: true
-      path: /doc/swagger-ui.html
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
