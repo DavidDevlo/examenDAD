@@ -1,0 +1,31 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
+      #defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
+  instance:
+    hostname: localhost
+    #instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+spring:
+  cloud:
+    gateway:
+
+      discovery:
+        locator:
+          enable: true
+      routes:
+        - id: edna-libro-service
+          uri: lb://edna-examen-service
+          predicates:
+            - Path=/libro/**
+        - id: edna-usuario-service
+          uri: lb://edna-usuario-service
+          predicates:
+            - Path=/usuario/**
+        - id: edna-prestamo-service
+          uri: lb://edna.prestamo-service
+          predicates:
+            - Path=/prestamo/**
