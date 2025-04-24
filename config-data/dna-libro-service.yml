@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/dna-libro
     username: postgres
-    password: root
+    password: ROOT
     driver-class-name: org.postgresql.Driver
 
   jpa:
