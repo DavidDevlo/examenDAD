@@ -17,15 +17,15 @@ spring:
         locator:
           enable: true
       routes:
-        - id: edna-libro-service
-          uri: lb://edna-examen-service
+        - id: dna-libro-service
+          uri: lb://edna-libro-service
           predicates:
             - Path=/libro/**
-        - id: edna-usuario-service
-          uri: lb://edna-usuario-service
+        - id: dna-usuario-service
+          uri: lb://dna-usuario-service
           predicates:
             - Path=/usuario/**
-        - id: edna-prestamo-service
-          uri: lb://edna.prestamo-service
+        - id: dna-prestamo-service
+          uri: lb://dna.prestamo-service
           predicates:
             - Path=/prestamo/**
