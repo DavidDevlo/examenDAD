@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: dna-libro-servie
+    name: dna-libro-service
 
   datasource:
     url: jdbc:postgresql://localhost:5432/dna-libro
